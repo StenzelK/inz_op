@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Model</title>
+    <link rel="stylesheet" href="/view3d/static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="controls">
+        <div class="slider-container">
+            <label for="figure-selector">Figure:</label>
+            <select id="figure-selector">
+                <option value="cube">Cube</option>
+                <option value="sphere">Sphere</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="cone">Cone</option>
+                <!-- Add other options as needed -->
+              </select>
+        </div>
+        <!-- Sliders will be dynamically added here -->
+        <div id="sliders"></div>
+        <input type="color" id="color-picker" value="#ff0000">
+    </div>
+    
+    <script src="/view3d/static/js/app.js"></script>
+</body>
+</html>
